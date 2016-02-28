@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Rails-API</title>
+
+		<meta name="description" content="Create API-only Ruby on Rails App with rails-api gem.">
+		<meta name="author" content="Hasim Sofaruddin">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#8c4738">
+				<h1>rails-api apipie-rails</h1>
+					<h3>Let's make an API-only-app and how to document it.</h3>
+					<p>
+						<small>Presented by <a href="http://simudin.github.io">Hasim Sofaruddin</a> / <a href="http://twitter.com/simudin">@simudin</a></small>
+					</p>
+				</section>
+
+				<section data-background="#8c4738">
+					<h2>What is an API app?</h2>
+				</section>
+
+				<section data-background="#8c4738">
+					<h2>Rails::API</h2>
+					<p>
+						Rails::API is a subset of a normal Rails application, created for applications that don't require all
+						functionality that a complete Rails application provides.
+					</p>
+				</section>
+
+				<section data-background="#8c4738">
+					<h2>Basic Configuration</h2>
+					<p>gem install rails-api</p>
+				</section>
+
+				<section>
+					<h1>Apipie-rails</h1>
+					<p>An API Documentation Tool</p>
+				</section>
+
+				<section>
+					<h2>What is apipie anyway?</h2>
+					<p>Apipie-rails is a DSL and Rails engine for documenting you RESTful API. Instead of traditional use of
+#comments , Apipie lets you describe the code by code. Apipie brings advantages.</p>
+				</section>
+
+				<section>
+					<h2>Why apipie?</h2>
+					<ul>
+						<li>no need to learn another syntax</li>
+						<li>possibility reuse the doc for other purposes (such as validation)</li>
+						<li>easier to extend and maintain</li>
+						<li>possibility to use other sources for documentation purposes (such as routes etc.)</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Basic Conf</h2>
+					<p>gem 'apipie-rails'</p>
+				</section>
+
+				<section>
+					<h2>Take a Moment</h2>
+					<p>
+						Press b or period on your keyboard to enter the 'paused' mode. This mode is helpful when you want to take distracting slides off the screen
+						during a presentation.
+					</p>
+				</section>
+
+				<section>
+					<h1>TAMAT</h1>
+					<p>powered by: <a href="https://github.com/hakimel/reveal.js">reveal.js</a> (html presentation framework) by Hakim El Hattab / hakim.se</p>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
