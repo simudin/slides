@@ -14,6 +14,25 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+		<meta name="twitter:card" content="summary">
+	  	<meta name="twitter:site" content="@simudin">
+	  	<meta name="twitter:creator" content="@simudin">
+	    <meta name="twitter:title" content="Rails-API">
+	    <meta name="twitter:url" content="http://simudin.github.io/slides/create-rails-api-only.html">
+	  	<meta name="twitter:description" content="Create API-only Ruby on Rails App with rails-api gem">
+	  	<meta name="twitter:image:src" content="http://simudin.github.io/assets/hasim.jpg">
+
+	  	<meta content="1463880640538728" property="fb:app_id">
+	  	<meta content="simudin" property="og:site_name">
+	  	<meta content="Rails-API" property="og:title">
+	    <meta content="article" property="og:type">
+	  	<meta content="Create API-only Ruby on Rails App with rails-api gem" property="og:description">
+	    <meta content="http://simudin.github.io/slides/create-rails-api-only.html" property="og:url">
+	    <meta content="http://simudin.github.io/about/" property="article:author">
+	    <meta content="http://simudin.github.io/assets/hasim.jpg" property="og:image">
+	    <meta content="presentation" property="article:section">
+	    <meta content="presentation" property="article:tag">
+
 		<link rel="stylesheet" href="css/reveal.min.css">
 		<link rel="stylesheet" href="css/theme/default.css" id="theme">
 
@@ -37,7 +56,16 @@
 	</head>
 
 	<body>
-
+		<div id="fb-root"></div>
+	    <script>
+		    (function(d, s, id) {
+		      var js, fjs = d.getElementsByTagName(s)[0];
+		      if (d.getElementById(id)) return;
+		      js = d.createElement(s); js.id = id;
+		      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1463880640538728";
+		      fjs.parentNode.insertBefore(js, fjs);
+		     }(document, 'script', 'facebook-jssdk'));
+	     </script>
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -48,6 +76,9 @@
 					<p>
 						<small>Presented by <a href="http://simudin.github.io">Hasim Sofaruddin</a> / <a href="http://twitter.com/simudin">@simudin</a></small>
 					</p>
+					<a href="https://twitter.com/share" class="twitter-share-button" data-via="simudin">Tweet</a>
+	  				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	  				<div class="fb-share-button" data-href="http://simudin.github.io/slides/create-ruby-gem.html" data-layout="button_count" style="position: relative; top: -8px; left: 33px;"></div>
 				</section>
 
 				<section data-background="#8c4738">
